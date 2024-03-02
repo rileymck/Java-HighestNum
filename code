@@ -1,0 +1,25 @@
+//By: Riley McKenzie
+//Date: 2/3/22
+//CS1050 Monday and Wednesday
+//Programming exercize 3.21
+
+import java.util.Scanner;
+public class point_two_one {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	    int largest = 0;//to determine what the largest number is 
+	    int n = 0;//counter
+	    
+	    while (n<10) { //This loop asks to enter a number and has a counter for the 10 inputs
+	    	System.out.print("Enter any number: ");
+	    	int number = input.nextInt();//recent number
+	    	++n;
+	    	if(number> largest) { //this loop checks to see what the largest number is with the 10 inputs
+	    		largest = number;
+	    	}// end of if
+	    }//end of while
+	    System.out.printf("The largest number is %d%n", largest);
+	    
+	}// end of void main
+}//end of class
